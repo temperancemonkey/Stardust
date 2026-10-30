@@ -2,12 +2,13 @@ body{
     transform-origin: center center;
     box-shadow: inset 0 0 150px rgba(44, 44, 44, 0.1);
     background-color: black;
-    color: rgb(130, 109, 140);
+    color: rgb(255, 98, 0);
 
     min-height: 100vh;
     margin: 0;
 
     font-family: "Google Sans Code", monospace;
+    font-weight: bold;
     cursor: auto;
     overflow-y: hidden;
     
@@ -110,9 +111,9 @@ input::-webkit-slider-runnable-track {
     height: 15px;
     background: repeating-linear-gradient(
         to right,
-        rgb(130, 109, 140) 0,
-        rgb(130, 109, 140) .5px,
-        transparent 1px,
+        rgb(255, 98, 0) 0,
+        rgb(255, 98, 0) .5px,
+        transparent 2px,
         transparent 21px
     );
     
@@ -125,9 +126,9 @@ input::-moz-range-track {
     height: 15px;
     background: repeating-linear-gradient(
         to right,
-        rgb(130, 109, 140) 0,
-        rgb(130, 109, 140) .5px,
-        transparent 1px,
+        rgb(255, 98, 0) 0,
+        rgb(255, 98, 0) .5px,
+        transparent 2px,
         transparent 21px
     );
 
@@ -150,7 +151,7 @@ input::-webkit-slider-thumb{
 
     width: 15px;
     height: 15px;
-    background-color: rgb(130, 109, 140);
+    background-color: rgb(255, 98, 0);
 
     /* background-color: rgb(56, 56, 56); */
 
@@ -193,13 +194,13 @@ input:nth-child(2)::-webkit-slider-thumb{
     left: 0;
     right: 0;
     gap: 15px;
-    color: rgb(130, 109, 140);
+    color: rgb(255, 98, 0);
     z-index: 100;
 
     margin: 20px 20px;
 
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
     
     overflow-x: scroll;
     scrollbar-color: transparent transparent;
