@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Humans Are Made of Stardust, Then What Are Computers?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Milonga&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <filter id="distort">
+        
+                <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="59"
+                    numOctaves="500"
+                    result="noise"
+                />
+        
+                <feDisplacementMap 
+                id="displacement-map"
+                in="SourceGraphic" 
+                in2="noise" 
+                scale="5000" 
+                xChannelSelector="R" 
+                yChannelSelector="G" />
+        
+            </filter>
+
+            <filter id="distortloading">
+        
+                <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="5"
+                    numOctaves="500"
+                    result="noise"
+                />
+        
+                <feDisplacementMap 
+                id="displacement-map"
+                in="SourceGraphic" 
+                in2="noise" 
+                scale="50" 
+                xChannelSelector="R" 
+                yChannelSelector="G" />
+        
+            </filter>
+
+
+        </defs>
+    </svg>
+
+    <!-- <div class="loading">
+        <p>If Humans Are Made of Stardust, <br>Then What Are Computers?</p>
+    </div> -->
+
+
+    <div class="workspace">
+
+        <div class="index" class="hasactive">
+
+            <div class="item" class="active" data-src="/assets/i.png">
+                <p class="work" >i</p>
+            </div>
+
+            <div class="item" class="active" data-src="/assets/001.png">
+                <p class="work" >01</p>
+            </div>
+
+            <div class="item" data-src="/assets/002.png">
+                <p class="work" >02</p>
+            </div>
+
+            <div class="item" data-src="/assets/003.png">
+                <p class="work" >03</p>
+            </div>
+
+            <div class="item" data-src="/assets/004.png">
+                <p class="work" >04</p>
+            </div>
+
+            <div class="item" data-src="/assets/005.png">
+                <p class="work" >05</p>
+            </div>
+
+            <div class="item" data-src="/assets/006.png">
+                <p class="work" >06</p>
+            </div>
+
+            <div class="item" data-src="/assets/007.gif">
+                <p class="work" >07</p>
+            </div>
+
+            <div class="item" data-src="/assets/008.gif">
+                <p class="work" >08</p>
+            </div>
+
+            <div class="item" data-src="/assets/009.gif">
+                <p class="work" >09</p>
+            </div>
+
+            <div class="item" data-src="/assets/010.jpeg">
+                <p class="work" >10</p>
+            </div>
+
+            <div class="item" data-src="/assets/011.webp">
+                <p class="work" >11</p>
+            </div>
+
+            <div class="item" data-src="/assets/012.png">
+                <p class="work" >12</p>
+            </div>
+
+            <div class="item" data-src="/assets/013.webp">
+                <p class="work" >13</p>
+            </div>
+
+            <div class="item" data-src="/assets/014.png">
+                <p class="work" >14</p>
+            </div>
+
+            <div class="item" data-src="/assets/015.webp">
+                <p class="work" >15</p>
+            </div>
+
+            <div class="item" data-src="/assets/016.webp">
+                <p class="work" >16</p>
+            </div>
+
+            <div class="item" data-src="/assets/017.webp">
+                <p class="work" >17</p>
+            </div>
+
+            <div class="item" data-src="/assets/018.jpg">
+                <p class="work" >18</p>
+            </div>
+
+            <div class="item" data-src="/assets/019.png">
+                <p class="work" >19</p>
+            </div>
+
+            <div class="item" data-src="/assets/020.png">
+                <p class="work" >20</p>
+            </div>
+
+            <div class="item" data-src="/assets/021.jpg">
+                <p class="work" >21</p>
+            </div>
+
+            <div class="item" data-src="/assets/022.jpg">
+                <p class="work" >22</p>
+            </div>
+
+            <div class="item" data-src="/assets/023.jpeg">
+                <p class="work" >23</p>
+            </div>
+
+            <div class="item" data-src="/assets/024.png">
+                <p class="work" >24</p>
+            </div>
+
+            <div class="item" data-src="/assets/025.png">
+                <p class="work" >25</p>
+            </div>
+
+            <div class="item" data-src="/assets/026.jpg">
+                <p class="work" >26</p>
+            </div>
+
+            <div class="item" data-src="/assets/027.jpg">
+                <p class="work" >27</p>
+            </div>
+
+            <div class="item" data-src="/assets/028.jpg">
+                <p class="work" >28</p>
+            </div>
+
+            <div class="item" data-src="/assets/029.jpg">
+                <p class="work" >29</p>
+            </div>
+
+            <div class="item" data-src="/assets/030.jpg">
+                <p class="work" >30</p>
+            </div>
+
+            <div class="item" data-src="/assets/031.png">
+                <p class="work" >31</p>
+            </div>
+
+            <div class="item" data-src="/assets/032.jpg">
+                <p class="work" >32</p>
+            </div>
+
+            <div class="item" data-src="/assets/033.webp">
+                <p class="work" >33</p>
+            </div>
+
+            <div class="item" data-src="/assets/034.jpg">
+                <p class="work" >34</p>
+            </div>
+
+            <div class="item" data-src="/assets/035.webp">
+                <p class="work" >35</p>
+            </div>
+
+            <div class="item" data-src="/assets/036.jpg">
+                <p class="work" >36</p>
+            </div>
+
+            <div class="item" data-src="/assets/037.jpg">
+                <p class="work" >37</p>
+            </div>
+
+            <div class="item" data-src="/assets/038.jpg">
+                <p class="work" >38</p>
+            </div>
+
+            <div class="item" data-src="/assets/039.jpg">
+                <p class="work" >39</p>
+            </div>
+
+            <div class="item" data-src="/assets/040.jpg">
+                <p class="work" >40</p>
+            </div>
+
+            <div class="item" data-src="/assets/041.jpg">
+                <p class="work" >41</p>
+            </div>
+
+            <div class="item" data-src="/assets/042.jpg">
+                <p class="work" >42</p>
+            </div>
+
+            <div class="item" data-src="/assets/043.webp">
+                <p class="work" >43</p>
+            </div>
+
+            <div class="item" data-src="/assets/044.png">
+                <p class="work" >44</p>
+            </div>
+
+            <div class="item" data-src="/assets/045.webp">
+                <p class="work" >45</p>
+            </div>
+
+            <div class="item" data-src="/assets/046.webp">
+                <p class="work" >46</p>
+            </div>
+
+            <div class="item" data-src="/assets/047.webp">
+                <p class="work" >47</p>
+            </div>
+
+            <div class="item" data-src="/assets/048.webp">
+                <p class="work" >48</p>
+            </div>
+
+            <div class="item" data-src="/assets/049.png">
+                <p class="work" >49</p>
+            </div>
+
+            <div class="item" data-src="/assets/050.jpg">
+                <p class="work" >50</p>
+            </div>
+
+            <div class="item" data-src="/assets/051.webp">
+                <p class="work" >51</p>
+            </div>
+
+            <div class="item" data-src="/assets/052.webp">
+                <p class="work" >52</p>
+            </div>
+
+            <div class="item" data-src="/assets/053.webp">
+                <p class="work" >53</p>
+            </div>
+
+        </div>
+
+
+        <div class="distortedtext">
+            <img class="display-img" src="" alt="">
+        </div>
+
+        <div class="input">
+
+            <input type="range" id="distortion-slider" min="0" max="100" value="0">
+            <input type="range" id="zoom-slider" min="1" max="50" step="0.01" value="0">
+
+        </div>
+
+       
+
+    </div>
+
+
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
